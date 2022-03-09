@@ -1,0 +1,20 @@
+server:
+  port: 23001
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 42.192.49.180:8848
+        username: nacos
+        password: nacos
+        namespace: public
+  application:
+    name: consumer-nacos
+feign:
+  client:
+    config:
+      provider-nacos:
+        loggerLevel: BASCIC
+        connectTimeout: 5000
+        readTimeout: 3000

@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 42.192.49.180:8848
+        username: nacos
+        password: nacos
+        prefix: nacos-config
+        extension-configs: yml,properties
+        namespace: dev
+  application:
+    name: nacos-config

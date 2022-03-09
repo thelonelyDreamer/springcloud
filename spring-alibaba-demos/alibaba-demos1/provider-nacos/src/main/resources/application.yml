@@ -1,0 +1,13 @@
+server:
+  port: 21000
+spring:
+  application:
+    name: provider-nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 42.192.49.180:8848
+        username: nacos
+        password: nacos
+        namespace: public
+
