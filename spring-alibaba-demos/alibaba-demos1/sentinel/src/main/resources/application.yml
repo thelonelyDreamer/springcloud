@@ -1,0 +1,10 @@
+server:
+  port: 12345
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:10110
+      web-context-unify: false
+  application:
+    name: sentinel

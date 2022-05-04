@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        namespace: dev
+        username: nacos
+        password: nacos
+        server-addr: 42.192.49.180:8848
+        prefix: gateway
+        file-extension: yml,properties

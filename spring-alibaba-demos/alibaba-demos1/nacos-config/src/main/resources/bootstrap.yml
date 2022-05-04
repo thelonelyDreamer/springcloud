@@ -5,8 +5,10 @@ spring:
         server-addr: 42.192.49.180:8848
         username: nacos
         password: nacos
-        prefix: nacos-config
-        extension-configs: yml,properties
         namespace: dev
+        prefix: nacos-config
+        file-extension: yaml
   application:
     name: nacos-config
+  profiles:
+    active: dev
