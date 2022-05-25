@@ -1,0 +1,12 @@
+server:
+  port: 12345
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        namespace: 8bc75589-c2cb-4443-9338-1dea31760d52
+  application:
+    name: service1
