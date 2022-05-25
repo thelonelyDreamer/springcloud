@@ -1,0 +1,22 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        namespace: 8bc75589-c2cb-4443-9338-1dea31760d52
+        username: nacos
+        password: nacos
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: 1
+          uri: lb://service1
+          predicates:
+            - Path="/api/hello"
+          filters:
+            - StripPrefix=1
+
+

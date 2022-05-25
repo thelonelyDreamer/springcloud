@@ -1,5 +1,5 @@
 server:
-  port: 12345
+  port: 12346
 spring:
   cloud:
     nacos:
@@ -9,4 +9,4 @@ spring:
         password: nacos
         namespace: 8bc75589-c2cb-4443-9338-1dea31760d52
   application:
-    name: service1
+    name: service2
