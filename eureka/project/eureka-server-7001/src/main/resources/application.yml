@@ -1,0 +1,13 @@
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: localpeer1
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localpeer2:7002/eureka/,http://localpeer3:7003/eureka/
+spring:
+  application:
+    name: eureka
